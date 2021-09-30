@@ -1,0 +1,10 @@
+# Tupple unpacking
+
+
+stock_prices = [('APPLE', 200),('GOOGLE', 400),('MICROSOFT', 100)]
+
+for item in stock_prices:
+    print(item)
+
+for ticker, price in stock_prices:
+    print(price+(0.1*price))

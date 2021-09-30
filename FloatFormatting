@@ -1,0 +1,7 @@
+
+# Float formatting
+
+result = 100 / 777
+
+print("The result was {r:1.4}".format(r=result))
+print("The result was {r:1.2}".format(r=result))

@@ -1,4 +1,4 @@
-# I haven't learned how to use databases yet, so that's why it took a lof of effort
+# Python program to check a person's nationality
 
 name = input("What's your name? ")
 place_birth = input("Where were you born? ")

@@ -1,0 +1,17 @@
+# Descoberta do número, página 83
+from random import randint
+
+tentativa = 0
+numero = randint(1, 100)
+chute = 0
+
+while chute != numero:
+    chute = int(input("Chute? "))
+    tentativa += 1
+    
+    if chute > numero:
+        print("Chutou alto!")
+    elif chute < numero:
+        print("Chutou baixo! ")
+
+print(f"Você acertou o número com {tentativa} tentativas!")

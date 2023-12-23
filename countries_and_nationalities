@@ -1,0 +1,26 @@
+# Dictionary containing countries and nationalities
+country_nationality_dict = {
+    "USA": "American",
+    "Canada": "Canadian",
+    "UK": "British",
+    "Germany": "German",
+    "France": "French",
+    # Add more countries and nationalities as needed
+}
+
+def main():
+    # Get input from the user
+    country_input = input("Enter the name of your country: ")
+
+    # Convert the country name to uppercase to handle case-insensitivity
+    country_input_upper = country_input.upper()
+
+    # Check if the entered country is in the dictionary
+    if country_input_upper in country_nationality_dict:
+        nationality = country_nationality_dict[country_input_upper]
+        print(f"You are from {country_input}, and you are {nationality}.")
+    else:
+        print(f"Sorry, the nationality for {country_input} is not available in the dictionary.")
+
+if __name__ == "__main__":
+    main()
